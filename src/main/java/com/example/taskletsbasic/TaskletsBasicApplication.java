@@ -28,8 +28,8 @@ public class TaskletsBasicApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         JobParameters jobParameters = new JobParametersBuilder()
-                .addString("count", "3")
-                .addString("name", "Cherry")
+                .addString("count", "4")
+                .addString("name", "Strawberry")
                 .toJobParameters();
 
         JobExecution execution = jobLauncher.run(job, jobParameters);
